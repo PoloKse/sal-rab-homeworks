@@ -14,7 +14,9 @@ function parseProducts(json) {
 function renderProductsCards(json) {
     clearProducts();
     renderProductsCards(products);
+    let products;
     products = parseProducts(json);
+    let length;
     length = products.length;
     for (let i = 0; i < length; i += 1) {
         addProduct(products[i]);
